@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  portfolio:
+    image: nginx
+    container_name: portfolio_olivier
+    ports:
+      - 3001:80
+    volumes:
+      - ./:/usr/share/nginx/html
