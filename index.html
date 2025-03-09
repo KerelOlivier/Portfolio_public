@@ -1,61 +1,152 @@
 <html>
 	<head>
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 		<link rel="stylesheet" href="styles.css"/>
 		<title> Olivier Boeren </title>
 	</head>
 	<body>
 		<header>
-			<div class="profile">
-				<div class="banner">
-					<img src="./images/profile.jpg"/>
-					<h2> Olivier Boeren <h2>
-				</div>
+			<div class="hero left">
+				<img class="profile" src="images/profile.jpg">
+				<a class="download" href="#">
+					<span class="material-symbols-outlined">download</span>
+					<span class="resume"> Resume </span>
+				</a>
 			</div>
-			<div class="info-header">
-				<nav class="menu-bar">
-					<span><a href="#about"> About </a></span>
-					<span><a href="#skills"> Skills </a></span>
-					<span><a href="#education"> Eduction </a></span>
-					<span><a href="#projects"> Projects </a></span>
-					<span><a href="#contact"> Contact </a></span>
-				</nav>
-				<div class="info">
-					<h1>Software Engineer</h1>
-					<p>
-					I am a software engineer who enjoys solving complex problems, particularly those related to graph theory, procedural generation, and algorithmic design. As such, I would like to work in an environment where I am frequently faced with fun and challenging new problems to solve.
-					</p>
+			<div class="hero right">
+				<div class="title-card">
+					<h1> Olivier Boeren </h1>
+					<h2> Software Engineer </h2>
 				</div>
 			</div>
 		</header>
+
 		<section id="about">
-			<h2>About</h2>
+			<h1> About </h1>
+			<hr/>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis nunc id eros pretium, id vulputate lorem faucibus. Aliquam erat volutpat. Sed et enim ultrices risus tempor ultrices et vel ipsum. Maecenas sollicitudin est arcu, in auctor nisi suscipit at. Morbi in nisl justo. Aenean accumsan vehicula augue mollis pretium. Aenean varius, nisl vitae tempus porta, quam turpis pretium quam, a porta ante urna vel ligula. Vivamus elementum turpis id sollicitudin congue. 
+			Phasellus interdum elit quis urna tincidunt, quis ullamcorper magna dictum. Quisque volutpat pharetra elit, eu mattis orci consequat vestibulum. Aliquam at magna at mauris pellentesque dapibus eget at felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque a dui at ante hendrerit blandit. Phasellus magna magna, facilisis sed ullamcorper a, tristique id diam. Ut bibendum egestas molestie. Curabitur sit amet imperdiet dolor, vel mattis massa. Praesent a mattis magna. In commodo ex ac mauris venenatis porta. Vestibulum et sapien orci. Sed scelerisque sem ut sollicitudin tristique. Suspendisse eu ligula sit amet nibh iaculis vulputate sit amet et enim. Sed eu nisl in arcu sodales imperdiet. Pellentesque vitae aliquet urna.
 			</p>
 		</section>
+
 		<section id="skills">
-			<h2>Skills</h2>
-			<div class="skill-col">
-				<span>skill a</span>
-				<span>skill a</span>
-				<span>skill a</span>
-				<span>skill a</span>
-			</div>
+			<h1> Skills </h1>
+			<hr/>
+			<p>
+			Phasellus interdum elit quis urna tincidunt, quis ullamcorper magna dictum. Quisque volutpat pharetra elit, eu mattis orci consequat vestibulum. Aliquam at magna at mauris pellentesque dapibus eget at felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque a dui at ante hendrerit blandit. Phasellus magna magna, facilisis sed ullamcorper a, tristique id diam. Ut bibendum egestas molestie. Curabitur sit amet imperdiet dolor, vel mattis massa. Praesent a mattis magna. In commodo ex ac mauris venenatis porta. Vestibulum et sapien orci. Sed scelerisque sem ut sollicitudin tristique. Suspendisse eu ligula sit amet nibh iaculis vulputate sit amet et enim. Sed eu nisl in arcu sodales imperdiet. Pellentesque vitae aliquet urna.
+			</p>
 		</section>
-		<section id="education">
-			<h2>Education</h2>
-			<article class="education-block"> 
-				<img src="./images/UiO.png"/>
-				<h3> University of Oslo </h3>
-				<span>2022-2022</span>
-			</article>
-		</section>
+
 		<section id="projects">
-			<h2>Projects</h2>
+			<h1> Projects </h1>
+			<hr/>
+			<p>
+			Phasellus interdum elit quis urna tincidunt, quis ullamcorper magna dictum. Quisque volutpat pharetra elit, eu mattis orci consequat vestibulum. Aliquam at magna at mauris pellentesque dapibus eget at felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque a dui at ante hendrerit blandit. Phasellus magna magna, facilisis sed ullamcorper a, tristique id diam. Ut bibendum egestas molestie. Curabitur sit amet imperdiet dolor, vel mattis massa. Praesent a mattis magna. In commodo ex ac mauris venenatis porta. Vestibulum et sapien orci. Sed scelerisque sem ut sollicitudin tristique. Suspendisse eu ligula sit amet nibh iaculis vulputate sit amet et enim. Sed eu nisl in arcu sodales imperdiet. Pellentesque vitae aliquet urna.
+			</p>
 		</section>
-		<footer id="contact">
-			<span><a href="#">LINKEDIN</a></span>
-			<span><a href="#">GITHUB</a></span>
+
+		<section id="education">
+			<h1> Education </h1>
+			<hr/>
+			<article class="edu-block">
+				<span class="edu-title">
+					<img class="inline-img" src="images/TUe.png">
+					<h2>Msc. Datascience and Artificial Intelligence </h2>
+					<span class="time-range">2022-2025</span>
+				</span>
+				<div class="edu-text">
+				<p>
+					During this master my focus was on how to process large amount of data. In particular the algorithmic side of data processing over the statistical analysis. For example I learned about how to process geographic data such as trajectories and map data during the "Algorithms for Geographic Data" course, and about the algorithms that make databases run in "Engineering Data Systems". As a secondary focus I had Machine Learning/Artifical Intelligence. Although I enjoy the topic and find it very fascinating I have learned that I prefer not to develop models myself due to the very slow feedback loop. I do, however, have the necessary knowledge to work closely together with people who implement the models.
+				</p>
+				<h3>Courses</h3>
+				<div class="courses">
+					<ul>
+						<li>Longitundinal Data Analysis</li>
+						<li>Algorithms for Geographic Data</li>
+						<li>Foundations of Process Mining</li>
+						<li>Optimization for Datascience</li>
+						<li>Topological Data Analysis</li>
+						<li>Engineering Data Systems</li>
+						<li>Data Intelligence Challenge</li>
+						<li>Philosphy and Ethics of AI</li>
+					</ul>
+					<ul>
+						<li>Big Data Management</li>
+						<li>Foundations of Artificial Intelligence</li>
+						<li>Datamining and Machine Learning</li>
+						<li>Machine Learning Engineering</li>
+						<li>Deep Learning</li>
+						<li>Generative AI Models</li>
+						<li>Visualization</li>
+						<li>Seminar Algorithms</li>
+					</ul>
+				</div>
+				</div>
+			</article>
+			<article class="edu-block">
+				<span class="edu-title">
+					<img class="inline-img" src="images/uu.svg">
+					<h2>Bsc. Computer Science</h2>
+					<span class="time-range">2019-2022</span>
+				</span>
+				<div class="edu-text">
+				<p>
+				During the bachelor I succesfully completed the honours program, which entailed a lot of interdisciplinary activities such as projects and seminars. As such, I have learned to work well with interdisciplinary teams and build on eachothers strengths. For the regular part of my curriculum I focussed on algorithms and software development with a brief look at artificial intelligence, which would eventually lead my to my choice in master degrees. 
+				</p>
+				<h3>Courses</h3>
+				<div class="courses">
+					<ul>
+						<li>Imperative Programming</li>
+						<li>Computer Architecture and Networks</li>
+						<li>Logic for Computer Science</li>
+						<li>Computer Science Introduction Project</li>
+						<li>Databases</li>
+						<li>Web Technology</li>
+						<li>Datastructures</li>
+						<li>Graphics</li>
+						<li>Functional Programming</li>
+						<li>Modelling and System Design</li>
+					</ul>
+					<ul>
+						<li>Concurrency</li>
+						<li>Image Processing</li>
+						<li>Artificial Intelligence</li>
+						<li>Computational Intelligence</li>
+						<li>Research Methods for Computer Science</li>
+						<li>Algorithms</li>
+						<li>3D Modelling</li>
+						<li>Game theory</li>
+						<li>Interaction Technology</li>
+						<li>Computer Science Software Project</li>
+					</ul>
+				</div>
+				</div>
+			</article>
+			<article class="edu-block">
+				<span class="edu-title">
+					<img class="inline-img" src="images/UiO.png">
+					<h2>Erasmus Exchange Program • Oslo, Norway</h2>
+					<span class="time-range">2022-2022</span>
+				</span>
+				<div class="edu-text">
+				<p>
+					During the final semester of the bachelor I took part in the Erasmus exchange program. Together with a friend we went to Oslo, Norway where we studied at the University of Oslo. During this time I tried my broaden my horizon by taking introductory courses in robotics and semantic web technologies.
+				</p>
+				<h3>Courses</h3>
+				<div class="courses">
+					<ul>
+						<li>Introduction to Robotics</li>
+						<li>Semantic Web</li>
+						<li>Norwegian for International Students</li>
+					</ul>
+				</div>
+			</article>
+		
+		</section>
+
+		<footer>
+			<a href="#"><img src="images/github.svg"></a>
+			<a href="#"><img src="images/linkedin.svg"></a>
 		</footer>
 	</body>
 </html>
