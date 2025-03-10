@@ -6,6 +6,6 @@ services:
     restart: always
     container_name: portfolio_olivier
     ports:
-      - 3001:80
+      - 80:80
     volumes:
       - ./:/usr/share/nginx/html
