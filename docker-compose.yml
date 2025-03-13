@@ -5,5 +5,14 @@ services:
     container_name: portfolio_olivier
     ports:
       - 80:80
+      - 443:443
     volumes:
-      - ./:/usr/share/nginx/html
+      - ./:/usr/share/nginx/html/:ro
+      - ./nginx/conf/:/etc/nginx/conf.d/:ro
+      - ./certbot/www/:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:ro
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - ./certbot/www/:/var/www/certbot/
+      - ./certbot/conf/:/etc/letsencrypt/
