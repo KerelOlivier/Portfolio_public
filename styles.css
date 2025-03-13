@@ -19,7 +19,6 @@
 	--section-spacing: 15pt;
 }
 
-
 html{
 	display:flex;
 	justify-content: center;
@@ -202,6 +201,70 @@ footer img{
 	height: 25pt;
 	width: 25pt;
 	margin: 15pt;
+}
+
+
+/*****************/
+/* PROJECT CARDS */
+/*****************/
+
+.project-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project-card{
+	position: relative;
+	height: 370pt;
+	width: 180pt;
+	background: #f1f1f1;
+	margin: 10pt;
+	padding: 10pt;
+
+	border: solid 2pt goldenrod;
+}
+.project-card p a{
+	color: #212121;
+}
+
+.project-img{
+	display: inline;
+	width: 100%;
+	object-fit: cover;
+}
+
+.project-link{
+	position: absolute;
+	display: inline-block;
+	background: #212121;
+	width: calc(100% - 40pt);
+	bottom: 10pt;
+	padding: 10pt;
+	color: #f1f1f1;
+	text-decoration: none;
+}
+.project-link.disabled{
+	background: #929292;
+	cursor: not-allowed;
+}
+.project-link img{
+	height: 16pt;
+	vertical-align: bottom;
+	margin-right: 5pt;
+}
+
+.project-card h2{
+	text-align: center;
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+}
+
+.project-card hr::after{
+	top: -8.5pt;
+	font-size: 12pt;
+	background: #f1f1f1;
 }
 
 /*********/
