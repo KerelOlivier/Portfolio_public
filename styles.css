@@ -379,4 +379,9 @@ footer img{
 		padding-left: 10%;
 		padding-right: 10%;
 	}
+
+	.courses{
+		grid-template-columns: none;
+		grid-template-rows: 1fr 1fr;
+	}
 }
