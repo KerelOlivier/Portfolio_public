@@ -32,6 +32,8 @@ p{
 	font-size: 1rem;
 }
 p span{
+	oont-family: "Roboto";
+	font-size: 1rem;
 	font-family: "Roboto";
 	font-size: 1rem;
 }
@@ -254,6 +256,11 @@ footer img{
 
 	border: solid 2pt var(--color-main);
 }
+
+.project-card p{
+	font-size: 1rem;
+}
+
 .project-card p a{
 	color: var(--color-dark);
 }
