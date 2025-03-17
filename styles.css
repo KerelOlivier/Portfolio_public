@@ -384,4 +384,7 @@ footer img{
 		grid-template-columns: none;
 		grid-template-rows: 1fr 1fr;
 	}
+	.courses ul:not(:first-child){
+		margin-top: 0;
+	}
 }
