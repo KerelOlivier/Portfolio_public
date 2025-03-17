@@ -156,6 +156,7 @@ section hr::after{
 .edu-title h2{
 	margin: 0;
 	margin-right: auto;
+	font-size: 1.5rem;
 }
 .time-range{
 	font-weight: bold;
