@@ -285,11 +285,23 @@ footer img{
 	header{
 		flex-direction: column;
 	}
+
+	.profile-container{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
 	.hero.left{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
 		height: 70vh;
 		background: var(--color-main);
 		border-left: none;
-		place-items:center;
 	}
 	.hero.right{
 		border-top: solid 5pt var(--color-light);
@@ -309,8 +321,8 @@ footer img{
 
 	header img.profile{
 		margin: 0 auto;
-		width: 60vw;
-		height: 60vw;
+		width: min(40vh, 70vw);
+		height: min(40vh, 70vw);
 	}
 	.download{
 		display:flex;
@@ -321,10 +333,11 @@ footer img{
 		color: var(--color-light);
 		min-width: 200pt;
 		width: 80%;
-		height: 50pt;
+		height: 5vw;
 		font-size: 30pt;
-		margin:10pt;
-		margin-bottom: 10%;
+		margin: 0;
+		margin-top: auto;
+		margin-bottom: 10pt;
 	}
 	.download .material-symbols-outlined{
 		font-size: 35pt;
