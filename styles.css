@@ -13,11 +13,6 @@ html{
 	padding: 0;
 	font-family: "Roboto";
 	font-size: 16px;
-	/*
-	text-size-adjust: none; 
-	-webkit-text-size-adjust: none;
-	-moz-text-size-adjust: none;
-	*/
 }
 body{
 	margin:0;
@@ -81,7 +76,7 @@ header img.profile{
 	text-decoration: none;
 	background: var(--color-main);
 	color: var(--color-dark);
-	font-size: 16pt;
+	font-size: 1.5rem;
 	margin:10pt;
 	margin-top: 0;
 	width: calc(100% - 40pt);
@@ -89,7 +84,7 @@ header img.profile{
 
 .download .material-symbols-outlined{
 	vertical-align: bottom;
-	font-size: 18pt;
+	font-size: 1.75rem;
 	margin-left: 0;
 	margin-right: 10pt;
 }
@@ -173,8 +168,11 @@ section hr::after{
 }
 
 .courses{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	flex-direction: row;
+}
+.courses ul{
+	margin-right: 30pt;
 }
 .edu-block{
 	margin-top: 50pt;
@@ -339,7 +337,7 @@ footer img{
 		justify-content: space-between;
 		height: 70vh;
 		background: var(--color-main);
-		border-left: none;
+		border-right: none;
 	}
 	.hero.right{
 		border-top: solid 5pt var(--color-light);
@@ -351,10 +349,10 @@ footer img{
 		background: none;
 	}
 	.title-card h1{
-		font-size: 12vw;
+		font-size: 5rem;
 	}
 	.title-card h2{
-		font-size: 6vw;
+		font-size: 2.5rem;
 	}
 
 	header img.profile{
@@ -372,13 +370,13 @@ footer img{
 		min-width: 200pt;
 		width: 80%;
 		height: 5vw;
-		font-size: 30pt;
+		font-size: 2rem;
 		margin: 0;
 		margin-top: auto;
 		margin-bottom: 10pt;
 	}
 	.download .material-symbols-outlined{
-		font-size: 35pt;
+		font-size: 2rem;
 	}
 
 	section{
@@ -387,10 +385,24 @@ footer img{
 	}
 
 	.courses{
-		grid-template-columns: none;
-		grid-template-rows: 1fr 1fr;
+		flex-direction: column;
+	}
+	.courses ul{
+		margin-right: 0;
 	}
 	.courses ul:not(:first-child){
 		margin-top: 0;
+	}
+	.edu-title{
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 600px){
+	.title-card h1{
+		font-size: 2.5rem;
+	}
+	.title-card h2{
+		font-size: 1.25rem;
 	}
 }
