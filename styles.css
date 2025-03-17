@@ -180,6 +180,8 @@ ul{
 }
 li{
 	list-style: none;
+	font-family: "Roboto";
+	font-size: 1rem;
 }
 li::before{
 	color: var(--color-main);
