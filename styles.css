@@ -25,23 +25,30 @@ header{
 	height: 100vh;
 }
 
+.profile-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
 header img.profile{
 	grid-row: 1;
-	position: absolute;
 	border: solid 5pt white;
 	border-radius: 100%;
 	width: 250pt;
 	height: 250pt;
 	object-fit: cover;
-	margin-left: calc(300pt - 250pt / 2);
 	z-index: 1000;
+	position: absolute;
+	margin-left: 20pt;
 }
 
 .hero.left{
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
-	grid-template-rows: auto 50pt;
-	grid-template-columns: 1fr;
+	justify-content: space-between;
 	border-right: solid 5px white;
 	min-width: 300pt;
 	background: var(--color-dark);
@@ -55,9 +62,11 @@ header img.profile{
 	padding: 10pt;
 	text-decoration: none;
 	background: var(--color-main);
-	margin: 0 10pt 10pt 10pt;
 	color: var(--color-dark);
 	font-size: 16pt;
+	margin:10pt;
+	margin-top: 0;
+	width: calc(100% - 40pt);
 }
 
 .download .material-symbols-outlined{
@@ -281,7 +290,7 @@ footer img{
 }
 
 
-@media screen and (max-width: 1000px){
+@media (max-width: 1000px){
 	header{
 		flex-direction: column;
 	}
@@ -313,10 +322,10 @@ footer img{
 		background: none;
 	}
 	.title-card h1{
-		font-size: 80pt;
+		font-size: 12vw;
 	}
 	.title-card h2{
-		font-size: 40pt;
+		font-size: 6vw;
 	}
 
 	header img.profile{
