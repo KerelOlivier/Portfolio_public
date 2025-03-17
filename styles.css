@@ -25,6 +25,13 @@ header{
 	height: 100vh;
 }
 
+p{
+	font-size: 1rem;
+}
+p span{
+	font-size: 1rem;
+}
+
 .profile-container{
 	display: flex;
 	flex-direction: column;
