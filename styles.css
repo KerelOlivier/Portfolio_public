@@ -394,7 +394,12 @@ footer img{
 		margin-top: 0;
 	}
 	.edu-title{
+		justify-content: space-between;
 		flex-wrap: wrap;
+	}
+	.edu-title h2{
+		order: 3;
+		font-size: 1.5rem;
 	}
 }
 
