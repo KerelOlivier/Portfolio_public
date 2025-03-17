@@ -181,14 +181,15 @@ ul{
 	padding: 0;
 	margin-bottom:0;
 	font-family: "Roboto";
-	font-size: 1rem !important;
+	font-size: 1rem;
 }
 li{
 	list-style: none;
 	font-family: "Roboto";
-	font-size: 1rem !important;
+	font-size: 1rem;
 }
 li::before{
+	font-size: 1rem;
 	color: var(--color-main);
 	content: "◆ ";
 }
