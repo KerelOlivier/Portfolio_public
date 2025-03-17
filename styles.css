@@ -181,12 +181,12 @@ ul{
 	padding: 0;
 	margin-bottom:0;
 	font-family: "Roboto";
-	font-size: 1rem;
+	font-size: 1rem !important;
 }
 li{
 	list-style: none;
 	font-family: "Roboto";
-	font-size: 1rem;
+	font-size: 1rem !important;
 }
 li::before{
 	color: var(--color-main);
@@ -258,7 +258,7 @@ footer img{
 }
 
 .project-card p{
-	font-size: 1rem;
+	font-size: 1rem !important;
 }
 
 .project-card p a{
